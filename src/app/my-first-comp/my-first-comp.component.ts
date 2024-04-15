@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class MyFirstCompComponent {
 
-  name : string = "";
+  name : string = ""; //not private
   email : string = "";
   message : string = "";
 
