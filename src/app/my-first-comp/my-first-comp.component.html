@@ -50,7 +50,7 @@
     --->
 
     <div class="flex-container" *ngIf="isSubmeted">
-      <app-message-details *ngFor="let msg of messages; let i = index" [message]="msg"
+      <app-message-details *ngFor="let msg of messages; let i = index" [message]="msg" [index]="i" (delete)="deleteMessage($event)"
       ></app-message-details>
     </div>
 
