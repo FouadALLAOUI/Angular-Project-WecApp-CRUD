@@ -11,5 +11,11 @@ export class MyFirstCompComponent {
   email : string = "";
   message : string = "";
 
+  onSubmit(){
+
+    console.log(this.name, this.email, this.message);
+
+  }
+
 
 }
