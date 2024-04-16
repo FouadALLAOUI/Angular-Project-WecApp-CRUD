@@ -10,6 +10,7 @@ export class MyFirstCompComponent {
   name : string = ""; //not private
   email : string = "";
   message : string = "";
+  isSubmeted : boolean = true;
 
   onSubmit(){
 
