@@ -39,7 +39,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let msg of messages">
+          <tr *ngFor="let msg of messages; let i = index">
+            <td>{{i}}</td>
             <td>{{msg.name}}</td>
             <td>{{msg.email}}</td>
             <td>{{msg.message}}</td>
