@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class MessageDetailsComponent {
 
-  @Input()
+  @Input() // get any data
   message: any = {};
 
 }
