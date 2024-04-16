@@ -10,11 +10,19 @@ export class MyFirstCompComponent {
   name : string = ""; //not private
   email : string = "";
   message : string = "";
-  isSubmeted : boolean = true;
+  isSubmeted : boolean = false;
+
+  messages: Array<any> = [];
 
   onSubmit(){
 
-    console.log(this.name, this.email, this.message);
+    this.isSubmeted = true;
+    this.messages.push({
+      'name': this.name,
+      'email': this.email,
+      'message': this.message
+    });
+    console.log(this.messages)
 
   }
 
