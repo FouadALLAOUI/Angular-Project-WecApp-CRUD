@@ -9,6 +9,7 @@ import { MessageDetailsComponent } from './message-details/message-details.compo
 import { MyFirstService } from './services/my-first.service';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,9 +22,13 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule, //Routing 
-    FormsModule  // for ngModel
+    FormsModule,  // for ngModel
+    HttpClientModule
   ],
-  providers: [MyFirstService], // Inject the service 
+  providers: [
+    MyFirstService,
+    HttpClient
+  ], // Inject the service 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
