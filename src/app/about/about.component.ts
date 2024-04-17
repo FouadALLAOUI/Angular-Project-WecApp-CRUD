@@ -17,7 +17,7 @@ export class AboutComponent implements OnInit {
   param: any;
 
   ngOnInit(): void {
-    console.log(this.activatedRoute);
+    console.log(this.activatedRoute.snapshot.params['username']); // Getting the param
   }
 
 }
