@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({ 
-  providedIn: 'root'
-})  // Dependency injection
+@Injectable()  // Dependency injection
 export class MyFirstService {
 
   messages: Array<any> = [];
