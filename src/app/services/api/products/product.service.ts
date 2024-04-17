@@ -14,7 +14,7 @@ export class ProductService {
 
   getAllProductsWithLimit(limit: number = 5) {
     //const productsUrl = this.baseUrl + 'products?limit='+limit;
-    const productsUrl = `${this.baseUrl} + 'products?limit='+${limit}`;
+    const productsUrl = `${this.baseUrl}products?limit=${limit}`;
     console.log(this.http.get(productsUrl))
     return this.http.get<any>(productsUrl);
   }
