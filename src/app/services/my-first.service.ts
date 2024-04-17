@@ -18,12 +18,12 @@ export class MyFirstService {
       message:"lkjfmoireaoireaj"
     });
     this.insert({
-      name: "RIO",
+      name: "PAW",
       email: "rio@gmail.com",
       message:"lkjfmoireaoireaj"
     });
     this.insert({
-      name: "RIO",
+      name: "JEN",
       email: "rio@gmail.com",
       message:"lkjfmoireaoireaj"
     });
